@@ -9,7 +9,7 @@ export default function Home() {
       <section id="about" className="  p-6">
         <AboutUs />
       </section>
-      <section id="proteccionplus" className="  p-6">
+      <section id="comerplus" className="  p-6">
         <ProtectionPlus />
       </section>
       <section id="reviews" className=" p-6">
