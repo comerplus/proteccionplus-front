@@ -1,6 +1,6 @@
 import AboutUs from '@/components/AboutUs';
 import ClientsSuccess from '@/components/ClientsSuccess';
-import ProtectionPlus from '@/components/ProtectionPlus';
+import ProtectionPlus from '@/components/ComerPlus';
 import Services from '@/components/Service';
 
 export default function Home() {
