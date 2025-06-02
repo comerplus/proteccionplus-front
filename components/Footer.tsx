@@ -13,20 +13,20 @@ const FOOTER_LINKS = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-white ">
+    <footer className="bg-white/90 backdrop-blur-md border-t border-gray-200">
       <div className="max-container padding-container py-10 flex flex-col md:flex-row md:justify-between gap-6">
         {/* Logo + Descripción */}
         <div className="flex flex-col gap-4 max-w-sm">
           <Link href="/">
-            <Image src="/hilink-logo.svg" alt="logo" width={120} height={40} />
+            <Image src="/proteccionplus.svg" alt="logo" width={160} height={40} />
           </Link>
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Hilink. Todos los derechos reservados.
+            © {new Date().getFullYear()} Proteccionplus. Todos los derechos reservados.
           </p>
         </div>
 
         {/* Links rápidos */}
-        {/* <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           {FOOTER_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -36,7 +36,7 @@ export const Footer = () => {
               {link.label}
             </Link>
           ))}
-        </div> */}
+        </div>
       </div>
     </footer>
   );

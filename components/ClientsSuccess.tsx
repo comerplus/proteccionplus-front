@@ -12,8 +12,6 @@ export default function ClientsSuccess() {
     'Cliente p',
   ];
 
-  
-
   const cases = [
     {
       title: 'Proyecto XYZ',

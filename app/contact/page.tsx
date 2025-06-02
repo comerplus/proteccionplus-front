@@ -1,53 +1,53 @@
-export default function Contact() {
+'use client';
+
+export default function ContactSection() {
   return (
-    <main className="mt-20 p-8">
-      <section className="min-h-screen bg-gray-100">
-        <h1 className="text-4xl font-bold mb-8">Contacto</h1>
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-lg font-medium">
-              Nombre
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full p-2 border border-gray-300 rounded"
-              placeholder="Tu nombre"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-lg font-medium">
-              Correo Electrónico
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full p-2 border border-gray-300 rounded"
-              placeholder="Tu correo electrónico"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-lg font-medium">
-              Mensaje
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              className="w-full p-2 border border-gray-300 rounded"
-              placeholder="Tu mensaje"
-            ></textarea>
-          </div>
+    <section
+      id="contacto"
+      className="h-screen w-full mt-10 bg-gradient-to-br from-[#fbdc13] via-white to-[#f3d408] flex items-center justify-center px-6"
+    >
+      <div className="max-w-4xl w-full bg-white rounded-3xl shadow-2xl p-10 md:p-14 flex flex-col lg:flex-row items-center gap-10">
+        {/* Texto */}
+        <div className="lg:w-1/2 text-[#056379] space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            ¡Estamos para ayudarte!
+          </h2>
+          <p className="text-lg text-[#608c9a]">
+            Completá el formulario y un asesor de nuestro equipo se pondrá en
+            contacto con vos dentro de las próximas 24 horas hábiles utilizando
+            el correo electrónico que registres.
+          </p>
+          <p className="italic text-sm text-[#056379]">
+            Tu consulta es importante para nosotros. ¡Gracias por confiar en
+            Protección Plus!
+          </p>
+        </div>
+
+        {/* Formulario */}
+        <form className="lg:w-1/2 w-full space-y-4">
+          <input
+            type="text"
+            placeholder="Tu nombre"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#056379]"
+          />
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#056379]"
+          />
+          <textarea
+            rows={4}
+            placeholder="Tu mensaje"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#056379]"
+          />
           <button
             type="submit"
-            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            className="bg-[#056379] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#045264] transition duration-300 w-full"
           >
-            Enviar
+            Enviar mensaje
           </button>
         </form>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

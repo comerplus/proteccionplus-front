@@ -7,7 +7,10 @@ import {
 
 export default function AboutUs() {
   return (
-    <section id="¿quiénes somos?" className="bg-white py-14 px-6 md:px-20 mb-[-25px]">
+    <section
+      id="¿quiénes somos?"
+      className="bg-white py-14 px-6 md:px-20 mb-[-25px]"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="bold-40 text-blue-900 mb-6 border-b-4 border-blue-500 inline-block">
           ¿Quiénes Somos?

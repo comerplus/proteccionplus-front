@@ -9,7 +9,7 @@ export const NAV_LINKS = [
 
 export const SECTION_LINKS = [
   { href: '#about', key: 'about', label: '¿Quiénes Somos?' },
-  { href: '#proteccionplus', key: 'proteccionplus', label: 'Protección Plus' },
+  { href: '#comerplus', key: 'comerplus', label: 'Comerplus' },
 
   {
     href: '#reviews',
